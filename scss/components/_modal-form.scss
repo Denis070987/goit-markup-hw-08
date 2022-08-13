@@ -1,0 +1,150 @@
+.register-form {
+    text-align: center;
+}
+
+.register__title {
+    display: block;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.register__group {
+    margin-bottom: 20px;
+}
+
+.register__wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus-within {
+    fill: #2196f3;
+    border-color: #2196f3;
+    }
+
+    &:hover {
+    fill: #2196f3;
+    border-color: #2196f3;
+     }
+
+    &:last-child {
+    margin-bottom: 0px;
+    }
+}
+
+.register__label {
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.register__input {
+    display: block;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+    border-color: #2196f3;
+    }
+}
+
+.register__message {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+    border-color: #2196f3;
+    }
+}
+
+.register__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+}
+
+.register__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.agreement-register__checkbox:checked+.agreement-register__icon .agreement-icon__uncheck {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement-icon__check {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.agreement-register__checkbox:checked+.agreement-register__icon & {
+    opacity: 1;
+   }
+}
+
+.agreement-register__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: #757575;
+    user-select: none;
+    text-underline-position: under;
+}
+
+.agreement-register__link {
+    color: #2196f3;
+}
+
+.register__btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 52px;
+    cursor: pointer;
+    border: none;
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+}

@@ -1,0 +1,50 @@
+.nav {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__stydia-link::after {
+    display: block;
+    content: '';
+    width: 48px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+}
+
+.nav__link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+   &--current {
+    color: var(--accent-tx-cl);
+    }
+}
+
+.nav__portfolio-link::after {
+    display: block;
+    content: '';
+    width: 78px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
