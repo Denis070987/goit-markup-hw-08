@@ -4,9 +4,38 @@
 }
 
 .header__container {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+
+.btn_mobile {
+    display: inline-flex;
+    
+    cursor: pointer;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+    background-color: transparent;
+    outline: transparent;
+& .mobile_icon-close {
+    display: none;
+}
+&.is-open .mobile_icon-close {
+    display: block;
+}
+&.is-open .mobile_icon-menu {
+    display: none;
+}
+ &:hover {
+    fill: #2196F3;
+ }
+ &:focus {
+     fill: #2196F3;
+ }
+}
+
 .header__list {
     display: flex;
     gap: 50px;

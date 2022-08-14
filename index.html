@@ -28,10 +28,18 @@
   </head>
   <body class="body">
     <!--header section-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="link logo" href="./"><span class="logo__accent">Web</span>studio</a>
-        <nav class="nav">
+        <nav class="mobile">
+          <button class="btn_mobile" type="button" aria-expanded="false" data-menu-button>
+            <svg width="40px" height="40px" aria-label="кнопка мобильного меню">
+              <use class="mobile_icon-close" href="./images/icons.svg#icon-close_40px"></use>
+              <use class="mobile_icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+        </nav>
+        <!-- <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link nav__link--current link nav__stydia-link" href="">Студия</a>
@@ -59,9 +67,9 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
-    </header> -->
+    </header>
     <!--main section-->
     <main class="main">
       <!--hero section-->
@@ -129,7 +137,7 @@
         </div>
       </section>
       <!--doing section-->
-      <!-- <section class="doing">
+      <section class="doing">
         <div class="container">
           <h2 class="section-title doing__main-title">Чем мы занимаемся</h2>
           <ul class="doing__list list">
@@ -166,7 +174,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--team section-->
       <!-- <section class="team">
         <div class="container">
@@ -682,5 +690,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
