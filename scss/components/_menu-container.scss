@@ -1,0 +1,148 @@
+.menu-container {
+    background-color: #FFFFFF;
+    &.is-open {
+    display: block;
+    }
+    @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    }
+}
+
+
+.btn_mobile {
+    display: inline-flex;
+    cursor: pointer;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+    background-color: transparent;
+    outline: transparent;
+
+    & .mobile_icon-close {
+        display: none;
+    }
+
+    &.is-open .mobile_icon-close {
+        display: block;
+    }
+
+    &.is-open .mobile_icon-menu {
+        display: none;
+    }
+
+    &:hover {
+        fill: #2196F3;
+    }
+
+    &:focus {
+        fill: #2196F3;
+    }
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
+
+.nav {
+    @media screen and (max-width: 767px) {
+    margin-top: 48px;
+        margin-left: 40px;
+ }
+}
+
+.nav__list {
+    @media screen and (max-width: 767px) {
+    flex-direction: column;
+    display: flex;
+    gap: 32px;
+    }
+}
+
+.nav__link {
+    @media screen and (max-width: 767px) {
+    font-size: 40px;
+    padding: 0; }
+}
+
+.nav__stydia-link::after, 
+ .nav__portfolio-link::after {
+    @media screen and (max-width: 767px) {
+        display: none; }
+}
+.header__list {
+    @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    gap: 0;
+    margin-left: 40px;
+    margin-top: 302px;
+    }
+}
+
+
+
+
+.header__item:nth-child(2) {
+margin-bottom: 32px;
+}
+
+
+
+
+
+
+.header__address_tel {
+    @media screen and (max-width: 767px) {
+    font-size: 34px;
+    color: #2196F3;
+    padding: 0;
+    
+}
+}
+.header__address-mail {
+    @media screen and (max-width: 767px) {
+    font-size: 24px;
+    color: #757575;
+    padding: 0;
+    }
+}
+
+.mobile-list {
+    @media screen and (max-width: 767px) {
+    margin-top: 64px;
+    margin-bottom: 48px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;}
+    
+    
+    @media screen and (min-width: 767px) {
+     display: none;
+    }
+}
+
+.mobile-list_item {
+    @media screen and (max-width: 767px) {
+ display: inline-flex;
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+margin-left: 10px;
+&:last-child {
+    border: none;
+}
+    }
+}
+
+
+.mobile-list_link {
+    @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    margin-right: 10px;
+    }
+}
