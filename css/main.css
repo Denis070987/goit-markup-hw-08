@@ -578,6 +578,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms ease-in-out 40ms, visibility 250ms ease-in-out 40ms;
   transition: opacity 250ms ease-in-out 40ms, visibility 250ms ease-in-out 40ms;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1003,6 +1004,10 @@ img {
   .mobile-list_item:last-child {
     border: none;
   }
+}
+
+.mobile-list_item:first-child {
+  margin-left: 0;
 }
 
 @media screen and (max-width: 767px) {
