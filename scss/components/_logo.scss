@@ -6,8 +6,12 @@
     font-size: 26px;
     line-height: calc(31 / 26);
     color: #000000;
+  @media screen and (min-width: 1200px) {
+   margin-left: 215px;
+   
 }
 
 .logo__accent {
     color: var(--accent-tx-cl);
+}
 }

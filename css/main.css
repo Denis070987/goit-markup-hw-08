@@ -190,8 +190,12 @@ img {
   line-height: 1.1923076923;
   color: #000000;
 }
-
-.logo__accent {
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-left: 215px;
+  }
+}
+.logo .logo__accent {
   color: var(--accent-tx-cl);
 }
 
@@ -684,6 +688,7 @@ img {
 }
 
 .menu-container {
+  z-index: 100;
   background-color: #FFFFFF;
 }
 .menu-container.is-open {
@@ -695,6 +700,18 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
   }
 }
@@ -776,13 +793,55 @@ img {
     margin-top: 302px;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+    margin-right: 215px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__address {
+    padding: 0;
+  }
+}
 
 .header__item:nth-child(2) {
   margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .header__item:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (max-width: 767px) {
-  .header__address_tel {
+  .header__address-tel {
     font-size: 34px;
     color: #2196F3;
     padding: 0;
@@ -845,16 +904,48 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/imghero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imghero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img@1x_sm.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img@1x_sm.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img@2x_sm.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img@2x_sm.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img@1x_md.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img@1x_md.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img@2x_md.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img@2x_md.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img@1x_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img@1x_lg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img@2x_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img@2x_lg.jpg);
+  }
 }
 
 .hero__container {
@@ -866,12 +957,17 @@ img {
 
 .hero__uppertitle {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__uppertitle {
+    font-size: 44px;
+  }
 }
 
 .hero__main-btn {
