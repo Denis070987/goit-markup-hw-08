@@ -1,7 +1,7 @@
 .subscription {
     gap: 20px;
-    position: relative;
-     padding-bottom: 60px;
+    // position: relative;
+    //  padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     
@@ -10,14 +10,17 @@
         }
 
     @media screen and (min-width: 1200px) {
-    top: 72px;
-    bottom: 72px;
-    width: 570px;
-    height: 86px;
-    position: relative;
-    margin-left: 93px;
+    display: flex;
+        align-items: center;
+        // flex-direction: row;
+        // top: 72px;
+    // bottom: 72px;
+    // width: 570px;
+    // height: 86px;
+    // position: relative;
+    // margin-left: 93px;
     margin-top: 0;
-    padding-bottom: 0;
+    // padding-bottom: 0;
                 }
     
 }
@@ -32,10 +35,11 @@
     color: #ffffff;
 
     @media screen and (min-width: 1200px) {
-          margin-bottom: 20px;  
-        position: absolute;
-            top: 0px;
-            left: 0px;
+        margin-right: auto;
+        //   margin-bottom: 20px;  
+        // position: absolute;
+        //     top: 0px;
+        //     left: 0px;
         }
 
 }
@@ -48,9 +52,10 @@
 
     @media screen and (min-width: 1200px) {
             margin-bottom: 0;
-        position: absolute;
-            bottom: 0;
-            left: 0;
+            margin-right: 12px;
+        // position: absolute;
+        //     bottom: 0;
+        //     left: 0;
             
         }
 }
@@ -112,8 +117,18 @@
     color: #ffffff;
 
 @media screen and (min-width: 1200px) {
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
+        // position: absolute;
+        // right: 0px;
+        // bottom: 0px;
     }
+}
+
+
+.subscription_form {
+    @media screen and (min-width: 1200px) {
+        display: flex;    
+        // flex-direction: row;
+            align-items: center;
+        }
+    
 }

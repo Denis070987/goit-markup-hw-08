@@ -35,10 +35,15 @@
 }
 
 .team__item {
+     
+    // flex-basis: calc((100% - 30px * 1) / 2);
     
+
+    @media screen and (min-width: 768px) {
     background-color: #ffffff;
     flex-basis: calc((100% - 30px * 1) / 2);
-    
+    }
+
     @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 30px * 3) / 4);
         }
