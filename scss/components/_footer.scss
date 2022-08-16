@@ -98,19 +98,31 @@
         }
     @media screen and (min-width: 1200px) {
             // padding-top: 72px;
-        justify-content: center;
+            
+            
             margin-bottom: 0px;
             }
 }
 
-.footer__text {
-    
+ 
+
+
+
+
+
+
+ .footer__text {
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 700px;
     font-size: 14px;
     line-height: calc(16 / 14);
     color: #ffffff;
+
+@media screen and (min-width: 1200px) {
+        
+        display: flex;
+        }
 }
 
 .footer__link {
