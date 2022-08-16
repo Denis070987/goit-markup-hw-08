@@ -20,9 +20,10 @@
             justify-content: space-around;
         }
     @media screen and (min-width: 1200px) {
+        flex-direction: row;
         padding-left: 0;
         padding-right: 0;
-        justify-content: baseline;
+        align-items: baseline;
         flex-wrap: nowrap;
         gap: 0;
                 }
