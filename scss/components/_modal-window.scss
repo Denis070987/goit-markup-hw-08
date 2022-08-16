@@ -1,7 +1,9 @@
 .backdrop {
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    
     z-index: 1000;
     position: fixed;
     top: 0px;
@@ -20,6 +22,7 @@
 }
 
 .modal {
+    
     position: absolute;
     width: 450px;
     max-width: 100%;
