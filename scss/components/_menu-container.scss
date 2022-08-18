@@ -1,9 +1,22 @@
 .menu-container {
-    height: 100vh;
-    z-index: 100;
+    // display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    // height: 100vh;
+    // z-index: 100;
     background-color: #FFFFFF;
     &.is-open {
-    display: block;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        height: 100vh;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 40px;
+    // display: block;
+    
     }
     @media screen and (max-width: 767px) {
     display: none;
@@ -68,10 +81,8 @@
 }
 
 .nav {
-    @media screen and (max-width: 767px) {
-    margin-top: 48px;
-        margin-left: 40px;
- }
+    margin-right: 0;
+
 
  @media screen and (min-width: 768px) {
     margin-right: 0;
@@ -101,14 +112,14 @@
     @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
     gap: 0;
-    margin-left: 40px;
-    margin-top: 302px;
+    
     }
         @media screen and (min-width: 768px) {
             display: inline-flex;
             justify-content: center;
             flex-direction: column;
             gap: 0;
+            
             }
         @media screen and (min-width: 1200px) {
         display: inline-flex;
@@ -159,8 +170,7 @@ margin-bottom: 32px;
 .mobile-list {
     @media screen and (max-width: 767px) {
     margin-top: 64px;
-    margin-bottom: 48px;
-    margin-left: 40px;
+    
     display: flex;
     flex-direction: row;
     justify-content: start;}

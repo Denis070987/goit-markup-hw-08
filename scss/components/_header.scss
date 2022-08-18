@@ -17,8 +17,13 @@
     }
 }
 
-
-
+.head-cont {
+    @media screen and (min-width: 768px) {
+    display: flex;
+        margin-left: auto;
+    align-items: center;
+}
+}
 .header__list {
     display: flex;
     gap: 50px;
