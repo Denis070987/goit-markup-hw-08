@@ -336,8 +336,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 0;
-    padding-right: 0;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
